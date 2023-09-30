@@ -1,5 +1,5 @@
 #IPU-Ranklist-Clone
-
+The site is deployed at `https://pypimo.github.io/ipu-clone`
 This project is a clone of the IPU-ranklist `https://www.ipuranklist.com`
 
 ## Technology used
