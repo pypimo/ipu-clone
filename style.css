@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}   
+
+html {  
+    background-color: #E9F0F8;
+    color: #343434;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: auto;
+}
+
+.page, .intro {
+    height: auto;
+    width: auto;
+    margin: 20px;
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.intro {
+    max-width: 750px;
+    border-radius: 30px;
+}
+
+.page {
+    max-width: 750px;
+    border-radius: 10px;
+}
+
+.heading{
+    color: white;
+    width: 170px;
+}
+
+.heading a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.logo {
+    background-image: url("logo.png");
+    background-size: cover;
+    height: 190px;
+    width: 210px;
+    margin: 20px auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+button {
+    background-color: #172E58;
+    color: white;
+    height: 40px;
+    /* margin: 4px 0px; */
+    border-radius: 5px;
+    padding: 6px 12px;
+    border: 1px solid #343a40;
+    box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: box-shadow 0.3s;
+    z-index: 1;
+    text-align: center;
+}
+
+button:hover{
+    box-shadow: rgba(85, 140, 245, 0.7) 5px 5px, rgba(134, 174, 252, 0.5) 10px 10px, rgba(134, 174, 252, 0.3) 15px 15px, rgba(134, 174, 252, 0.2) 20px 20px, rgba(134, 174, 252, 0.1) 25px 25px ; /*rgba(179, 204, 252, 0.3) 15px 15px,rgba(215, 225, 250, 10.3) 20px 20px, rgba(229, 234, 252, 0.3) 25px 25px;*/
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+
+#extra {
+    background-color: #F8F9FA;
+    color: #343434;
+    border: none;
+    box-shadow: none;
+}
+
+#extra:hover {
+    box-shadow: none;
+    background-color: #E8E8E8 ;
+    position: relative;
+    top: 0;
+    transition: background-color 0.2s;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.75rem;
+
+}
+h4 {
+    font-size: 1.25rem;
+}
+
+h1,h2,h3,h4 {
+    font-weight: normal;
+    margin: 20px;
+}
+
+.features, .content, .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.grid-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.grid-container > button {
+    margin: 5px;
+}
+
+
+hr {
+    border: 1px solid#D8D8D8;         
+    margin: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #0F5DF4;
+}
+
+.intro-para > p {
+    line-height: 1.6rem;
+}
+
+#developer {
+    margin: 10px;
+}
+footer {
+    margin: 25px;
+}
+
+.icon-container {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    border: 1px solid #D8D8D8;
+    padding: 10px;
+    border-radius: 4px;
+}
+#menu {
+    display: none;
+    background-color: #172E58;
+    color: #FFFFFF80;
+    text-decoration: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 0;
+    padding: 5px 15px;
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+
+#menu a {
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF80;
+    display: block;
+    float: none;
+}
+
+#menu a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.navbar{
+    height: 56px;
+    background-color: #172E58;
+    color: #FFFFFF80;
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #menu {
+        display: flex;
+        justify-content: space-evenly;
+        position: static;
+        max-width: 720px;
+    }
+    #menu a {
+        padding: 0 5px;
+        display: inline-block;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .page, .intro {
+        margin: 20px auto;
+        padding: 30px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0 10px;
+    }
+
+    
+}
+
+@media (min-width: 1000px) {
+    .page {
+        max-width: 980px; 
+    }
+}

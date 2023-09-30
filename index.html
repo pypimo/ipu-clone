@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPU Ranklist</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="result-style.css">
+    <link rel="stylesheet" href="menu-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="heading">
+                <a>IPU Ranklist</a>
+            </div>
+            <div class="icon-container" onclick="dropdown()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div id="menu">
+                <a href="index.html">Home</a>
+                <a href="result.html">Univerity Ranklist</a>
+                <a href="result.html">College Ranklist</a>
+                <a href="unavailable.html">Student Profile</a>
+                <a href="unavailable.html">Search</a>
+                <a href="unavailable.html">Statistics</a>
+            </div>
+        </div>
+    </header>
+    <main class="intro">
+            <div class="logo"></div>
+            <h1>IPU Ranklist</h1>
+            <h4>A minimalist Result and Ranklist application for GGSIPU (Guru Gobind Singh Indraprastha University).</h4>
+            <hr>
+            <section class="intro-para">
+                <p>The application covers results of all bachelor programmes across all batches and branches since 2015 for all colleges affiliated with GGSIPU (Guru Gobind Singh Indraprastha University).</p>
+                <br>
+                <p>This project is public and you can track its progress on the <a>GitHub Repo</a>. If you find any bugs, or would like suggest some features, or have any questions regarding IPU Ranklist, feel free to drop a mail at <a>admin@ipuranklist.com</a> or <a>raise an issue</a>. If you liked the application or it helped you, please star the repo.
+                </p>
+            </section>
+            <hr>
+            <section class="features">
+                <h2>FEATURES</h2>
+                <h4>College Ranklists 📈</h4>
+                <section class="grid-container">
+                    <button onclick="window.location.href = 'result.html'">B. Tech.</button>
+                    <button onclick="myFunction()">BCA</button>
+                    <button onclick="myFunction()">BBA</button>
+                    <button onclick="window.location.href = 'result.html'">USICT B. Tech.</button>
+                    <button onclick="myFunction()">B. Com. (H)</button>
+                    <button onclick="myFunction()">B.Ed.</button>
+                    <button onclick="myFunction()">LLB</button>
+                    <button onclick="myFunction()">B. A.</button>
+                    <button onclick="myFunction()">BHMCT</button>
+                    <button onclick="myFunction()">B.Voc.</button>
+                    <button onclick="myFunction()">MCA</button>
+                    <button onclick="myFunction()">B.Design</button>
+                    <button onclick="myFunction()">M.Design</button>
+                    <button onclick="myFunction()">M.Planning</button>
+                    <button onclick="myFunction()">MBA</button>
+                    <button id="extra">More Upcoming...</button>
+                </section>
+
+                <h4>Student Profiles 👩🏻‍🎓</h4>
+                <section class="grid-container">
+                    <button onclick="window.location.href = 'unavailable.html'">Student Profile</button>
+                    <button onclick="window.location.href = 'unavailable.html'">Search by Name</button>
+                    <button onclick="window.location.href = 'unavailable.html'">Combined Result of Migration Students</button> 
+                </section>
+
+                <h4>Other Features 📑</h4>
+                <section class="grid-container">
+                    <button onclick="window.location.href = 'result.html'">University Ranklist</button>
+                    <button onclick="window.location.href = 'unavailable.html'">Statistics</button>
+                    <button onclick="window.location.href = 'unavailable.html'">Noification Bot</button>
+                </section>
+            </section>
+            <hr>
+            <footer class="footer">
+                <p id="developer">Developed by <a>Prapti Bhardwaj</a></p>
+                <div class="icons">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

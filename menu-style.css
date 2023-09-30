@@ -1,0 +1,49 @@
+#selection-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 100%;
+    /* background-color: pink; */
+    margin: 0;
+}  
+
+#selection-bar select, input[type="text"], .remove {
+    border: 2px solid transparent;
+    box-shadow: rgba(14, 30, 37, 0.1) 0px 2px 16px 0px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+#selection-bar > select {
+    background-color: white;
+    text-align: justify; 
+    flex-grow: 1;
+}
+
+#selection-bar select:hover {
+    border: 2px solid rgba(85, 140, 245, 0.7);
+    cursor: pointer;
+} 
+
+#selection-bar > button {
+    width: 100%;
+    flex-grow: 1.5;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    #selection-bar > button {
+        width: auto;
+        flex-grow: 1.5;
+    }
+    #selection-bar {
+        width: 70%;
+        margin: auto;
+    }
+}
+
