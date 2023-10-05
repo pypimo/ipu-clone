@@ -1,6 +1,6 @@
 # IPU-Ranklist-Clone
-The site is deployed at `https://pypimo.github.io/ipu-clone`
-This project is a clone of the IPU-ranklist `https://www.ipuranklist.com`
+The site is deployed [here](https://pypimo.github.io/ipu-clone)
+This project is a clone of the [IPU-ranklist](https://www.ipuranklist.com)
 
 ## Technology used
 I have used:
